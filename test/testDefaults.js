@@ -1,5 +1,5 @@
 import {defaults} from '../defaults.js'
-import { testObject } from './testObject.js'
+import { testObject,defaultProps } from './testObject.js'
 let res=[];
-res=defaults(testObject);
+res=defaults(testObject,defaultProps);
 console.log(res);

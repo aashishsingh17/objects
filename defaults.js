@@ -1,8 +1,16 @@
+
 function defaults(obj, defaultProps) {
-          // Fill in undefined properties that match properties on the
-          // `defaultProps` parameter object.
-          // Return `obj`.
-          // http://underscorejs.org/#defaults
-        
+     //_.defaults(obj,defaultProps);
+          for(var i in defaultProps)
+          {
+              if(obj.hasOwnProperty(i)===false)
+              {
+                //console.log(i);
+                  obj[i]=defaultProps[i];      
+              }
+
+          }
+          return obj;
       }
       export {defaults};
+    
